@@ -1,6 +1,6 @@
 <h2>Person API REST com Spring Boot</h2>
 
-Nesta live coding vamos desenvolver um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
+Um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
 
 Durante a sessão, serão desenvolvidos e abordados os seguintes tópicos:
 
@@ -34,7 +34,7 @@ São necessários os seguintes pré-requisitos para a execução do projeto dese
 * Conta no Heroku para o deploy do projeto na nuvem
 * Muita vontade de aprender e compartilhar conhecimento :)
 
-Abaixo, seguem links bem bacanas, sobre tópicos mencionados durante a aula:
+Abaixo, seguem links sobre tópicos utilizados no desenvolvimento:
 
 * [SDKMan! para gerenciamento e instalação do Java e Maven](https://sdkman.io/)
 * [Referência do Intellij IDEA Community, para download](https://www.jetbrains.com/idea/download)
