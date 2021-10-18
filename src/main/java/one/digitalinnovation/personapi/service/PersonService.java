@@ -20,15 +20,10 @@ public class PersonService {
     private PersonRepository personRepository;
     private final PersonMapper personMapper = PersonMapper.INSTANCE; //instancia do mapper person
 
-//    @Autowired
-//    public PersonService(PersonRepository personRepository) {
-//        this.personRepository = personRepository;
-//    }
-
     public MessageResponseDTO createPerson(PersonDTO personDTO){
         Person personToSave = personMapper.toModel(personDTO);
-        personRepository.save(personToSave);
-        return createMessageResponse("Created person ID - ", personToSave.getId());
+        Person savedPerson = personRepository.save(personToSave);
+        return createMessageResponse("Person successfully created with ID ", savedPerson.getId());
     }
 
     public List<PersonDTO> listAll() {
@@ -57,7 +52,7 @@ public class PersonService {
         verifyIfExists(id);
         Person personToUpdate = personMapper.toModel(personDTO);
         Person updated = personRepository.save(personToUpdate);
-        return createMessageResponse("Updated person ID - ", updated.getId());
+        return createMessageResponse("Person successfully updated with ID ", updated.getId());
     }
 
     private MessageResponseDTO createMessageResponse(String s, Long id) {
