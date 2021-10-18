@@ -10,19 +10,21 @@ Durante a sessão, serão desenvolvidos e abordados os seguintes tópicos:
 mvn spring-boot:run 
 ```
 
-## Após executar o comando acima, basta apenas abrir o seguinte endereço e visualizar a execução do projeto:
+## Após executar o comando acima, basta apenas abrir o seguinte endereço e visualizar a execução do projeto localmente:
 
 ```
 http://localhost:8080/api/v1/people
 ```
+### ou Link no Heroku
+```
+https://people-api-proj.herokuapp.com/api/v1/people
+```
+
 ### Endpoins
 
 ![](https://github.com/willamys/person-api-proj/blob/master/images/Screenshot%20from%202021-10-18%2011-41-14.png)
 
-### Link no Heroku
-```
-https://people-api-proj.herokuapp.com/
-```
+
 ### Pré-requisitos
 São necessários os seguintes pré-requisitos para a execução do projeto desenvolvido durante a aula:
 
