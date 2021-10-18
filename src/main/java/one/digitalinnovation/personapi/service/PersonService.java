@@ -8,10 +8,8 @@ import one.digitalinnovation.personapi.mapper.PersonMapper;
 import one.digitalinnovation.personapi.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -28,10 +26,7 @@ public class PersonService {
     public MessageResponseDTO createPerson(PersonDTO personDTO){
         Person personToSave = personMapper.toModel(personDTO);
         personRepository.save(personToSave);
-        return MessageResponseDTO
-                .builder()
-                .message("Created person with ID - "+ personToSave.getId())
-                .build();
+        return createMessageResponse("Created person ID - ", personToSave.getId());
     }
 
     public List<PersonDTO> listAll() {
@@ -54,5 +49,19 @@ public class PersonService {
 
     private Person verifyIfExists(Long id) throws PersonNotFoundException {
         return personRepository.findById(id).orElseThrow(() -> new PersonNotFoundException(id));
+    }
+
+    public MessageResponseDTO updateById(Long id, PersonDTO personDTO) throws PersonNotFoundException {
+        verifyIfExists(id);
+        Person personToUpdate = personMapper.toModel(personDTO);
+        Person updated = personRepository.save(personToUpdate);
+        return createMessageResponse("Updated person ID - ", updated.getId());
+    }
+
+    private MessageResponseDTO createMessageResponse(String s, Long id) {
+        return MessageResponseDTO
+                .builder()
+                .message(s + id)
+                .build();
     }
 }
