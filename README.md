@@ -1,29 +1,29 @@
-<h2>Person API REST com Spring Boot</h2>
+# Person API REST com Spring Boot
 
 Um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
 
 Durante a sessão, serão desenvolvidos e abordados os seguintes tópicos:
 
-* Setup inicial de projeto com o Spring Boot Initialzr 
-* Criação de modelo de dados para o mapeamento de entidades em bancos de dados
-* Desenvolvimento de operações de gerenciamento de usuários (Cadastro, leitura, atualização e remoção de pessoas de um sistema).
-* Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
-* Desenvolvimento de testes unitários para validação das funcionalidades
-* Implantação do sistema na nuvem através do Heroku
-
-Para executar o projeto no terminal, digite o seguinte comando:
+## Para executar o projeto no terminal, digite o seguinte comando:
 
 ```shell script
 mvn spring-boot:run 
 ```
 
-Após executar o comando acima, basta apenas abrir o seguinte endereço e visualizar a execução do projeto:
+## Após executar o comando acima, basta apenas abrir o seguinte endereço e visualizar a execução do projeto:
 
 ```
 http://localhost:8080/api/v1/people
 ```
+### Endpoins
 
+![](https://github.com/willamys/person-api-proj/blob/master/images/Screenshot%20from%202021-10-18%2011-41-14.png)
 
+### Link no Heroku
+```
+https://people-api-proj.herokuapp.com/
+```
+### Pré-requisitos
 São necessários os seguintes pré-requisitos para a execução do projeto desenvolvido durante a aula:
 
 * Java 11 ou versões superiores.
@@ -47,8 +47,3 @@ Abaixo, seguem links sobre tópicos utilizados no desenvolvimento:
 * [Documentação oficial do Lombok](https://projectlombok.org/)
 * [Documentação oficial do Map Struct](https://mapstruct.org/)
 * [Referência para o padrão arquitetural REST](https://restfulapi.net/)
-
-[Neste link](https://drive.google.com/file/d/1crVPOVl6ok2HeYjh3fjQuGQn2lDZVHrn/view?usp=sharing), seguem os slides apresentados como o roteiro utilizado para o desenvolvimento do projeto da nossa sessão.
-
-
-
