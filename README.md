@@ -23,7 +23,22 @@ https://people-api-proj.herokuapp.com/api/v1/people
 ### Endpoins
 
 ![](https://github.com/willamys/person-api-proj/blob/master/images/Screenshot%20from%202021-10-18%2011-41-14.png)
+ ou 
 
+#### OPENAPI
+
+Abrir o swagger e ver a documentação
+```http://locahost:8080/swagger-ui/index.html```
+
+E no explore digite: 
+```
+/v3/api-docs (explore)
+```
+
+### Padrões de Projetos explorados
+- Singleton (@Autowired e @Bean)
+- Strategy (@Repository e @Service)
+- DTO
 
 ### Pré-requisitos
 São necessários os seguintes pré-requisitos para a execução do projeto desenvolvido durante a aula:
