@@ -15,22 +15,28 @@ mvn spring-boot:run
 ```
 http://localhost:8080/api/v1/people
 ```
+
 ### ou Link no Heroku
+
 ```
 https://people-api-proj.herokuapp.com/api/v1/people
 ```
 
-### Endpoins
+### Endpoints
 
 ![](https://github.com/willamys/person-api-proj/blob/master/images/Screenshot%20from%202021-10-18%2011-41-14.png)
- ou 
+ 
 
 #### OPENAPI
 
 Abrir o swagger e ver a documentação
-```http://locahost:8080/swagger-ui/index.html```
+
+```
+http://locahost:8080/swagger-ui/index.html
+```
 
 E no explore digite: 
+
 ```
 /v3/api-docs (explore)
 ```
