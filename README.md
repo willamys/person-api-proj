@@ -25,6 +25,21 @@ https://people-api-proj.herokuapp.com/api/v1/people
 ### Endpoints
 
 ![](https://github.com/willamys/person-api-proj/blob/master/images/Screenshot%20from%202021-10-18%2011-41-14.png)
+ 
+
+#### OPENAPI
+
+Abrir o swagger e ver a documentação
+
+```
+http://locahost:8080/swagger-ui/index.html
+```
+
+E no explore digite: 
+
+```
+/v3/api-docs (explore)
+```
 
 ### Padrões de Projetos explorados
 - Singleton (@Autowired e @Bean)
@@ -55,3 +70,10 @@ Abaixo, seguem links sobre tópicos utilizados no desenvolvimento:
 * [Documentação oficial do Lombok](https://projectlombok.org/)
 * [Documentação oficial do Map Struct](https://mapstruct.org/)
 * [Referência para o padrão arquitetural REST](https://restfulapi.net/)
+
+
+## Frontend
+
+You can access the code in the [repo](https://github.com/willamys/spring-boot-ui-react).
+Clone the repo and follow the stpes to build de app.
+
